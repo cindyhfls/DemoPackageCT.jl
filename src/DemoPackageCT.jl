@@ -1,6 +1,6 @@
 module DemoPackageCT
 
 # Write your package code here.
-print_greeting() = printstyled("Hello, world!"; color=:magenta)
+print_greeting(io::IO = stdout) = print(io, "Hello, world!")
 
 end
